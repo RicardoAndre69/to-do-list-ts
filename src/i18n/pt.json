@@ -1,0 +1,10 @@
+{
+  "title": "Minha Lista",
+  "add": "Adicionar",
+  "placeholder": "Digite um item...",
+  "label": "Digite um novo item",
+  "clear": "Limpar Tudo",
+  "empty": "Nenhum item na lista",
+  "newItemTitle": "Novo Item",
+  "clearConfirm": "Tem certeza que deseja apagar tudo?"
+}

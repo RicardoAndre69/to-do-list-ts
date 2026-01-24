@@ -1,0 +1,10 @@
+{
+  "title": "My List",
+  "add": "Add",
+  "placeholder": "Type an item...",
+  "clear": "Clear All",
+  "label": "Enter a new to do item",
+  "empty": "No items in the list",
+  "newItemTitle": "New Item Entry",
+  "clearConfirm": "Are you sure you want to delete everything?"
+}
