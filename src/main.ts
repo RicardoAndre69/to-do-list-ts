@@ -30,10 +30,37 @@ const initApp = (): void => {
   })
 
   const clearItems = document.getElementById("clearItemsButton") as HTMLButtonElement
+  const confirmDialog = document.getElementById("confirmDialog") as HTMLDivElement
+  const confirmDialogCancel = document.getElementById("confirmDialogCancel") as HTMLButtonElement
+  const confirmDialogConfirm = document.getElementById("confirmDialogConfirm") as HTMLButtonElement
+
+  const openConfirmDialog = (): void => {
+    confirmDialog.classList.remove("hidden")
+    confirmDialog.setAttribute("aria-hidden", "false")
+  }
+
+  const closeConfirmDialog = (): void => {
+    confirmDialog.classList.add("hidden")
+    confirmDialog.setAttribute("aria-hidden", "true")
+  }
+
   clearItems.addEventListener("click", (): void => {
-    if (confirm(i18n.t("clearConfirm"))) {
-      fullList.clearList()
-      template.clear()
+    openConfirmDialog()
+  })
+
+  confirmDialogCancel.addEventListener("click", (): void => {
+    closeConfirmDialog()
+  })
+
+  confirmDialogConfirm.addEventListener("click", (): void => {
+    fullList.clearList()
+    template.clear()
+    closeConfirmDialog()
+  })
+
+  confirmDialog.addEventListener("click", (event: MouseEvent): void => {
+    if (event.target === confirmDialog) {
+      closeConfirmDialog()
     }
   })
 

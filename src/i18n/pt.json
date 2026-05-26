@@ -6,5 +6,7 @@
   "clear": "Limpar Tudo",
   "empty": "Nenhum item na lista",
   "newItemTitle": "Novo Item",
-  "clearConfirm": "Tem certeza que deseja apagar tudo?"
+  "clearConfirm": "Tem certeza que deseja apagar tudo?",
+  "cancel": "Cancelar",
+  "confirm": "Confirmar"
 }
